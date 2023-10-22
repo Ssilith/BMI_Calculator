@@ -25,6 +25,7 @@ class InputContainer extends StatelessWidget {
           width: 223,
           height: 29,
           child: TextField(
+            keyboardType: TextInputType.number,
             controller:
                 readOnly ? TextEditingController(text: result) : controller,
             inputFormatters: inputFormat != null ? [inputFormat!] : null,
